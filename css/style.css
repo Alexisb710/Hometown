@@ -1,0 +1,160 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Pacifico&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Pacifico', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+img {
+    width: clamp(75px, 150px, 300px);
+}
+
+#hero {
+    background-image: url("../images/sylmar-aerial-with-mountains-in-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+    padding: 40px 50px;
+    margin-bottom: 0;
+}
+
+.hero-title {
+    font-family: 'Pacifico', cursive;
+    background-color: rgba(192, 228, 240, 0.747);
+    text-shadow: 0 0 5px black;
+    padding: 0 20px;
+}
+
+.hero-description {
+    width: 20em;
+    background-color: rgba(74, 138, 159, 0.682);
+}
+
+#activites {
+    background-color: #F1FAEE;
+    margin: 0 0 40px 0;
+    padding: 25px 10px;
+}
+
+.activities-title {
+    margin: 0 0 30px 0;
+    
+}
+
+.activities-pics {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    min-height: 225px;
+}
+
+.activities-pics > * {
+    flex: 1;
+}
+
+/* || HIKING */
+.activities-hiking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.activities-hiking-img {
+    border-radius: 99999px;
+}
+
+.hiking-img-title {
+    font-weight: bold;
+}
+
+
+/* || MUSEUM */
+.activities-museum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.activities-museum-img {
+    border-radius: 99999px;
+}
+
+.museum-img-title {
+    font-weight: bold;
+}
+
+
+/* || PARK */
+.activities-park {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.activities-park-img {
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+.park-img-title {
+    font-weight: bold;
+}
+
+#guide {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 400px;
+    margin: 20px auto;
+    background-color: #66bdab;
+    padding: 15px;
+    gap: 1rem;
+    border-bottom: 5px solid blue;
+}
+
+#headshot {
+    /* width: 150px; */
+    object-fit: cover;
+}
+
+.guide-info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
